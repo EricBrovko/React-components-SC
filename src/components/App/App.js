@@ -12,7 +12,6 @@ class App extends React.Component<*, *> {
     isLoading: false
   }
 
-
   componentDidMount() {
   }
 
