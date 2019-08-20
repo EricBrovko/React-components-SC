@@ -1,9 +1,14 @@
 // @flow
-export default {
-    en: {
-        "nav.dashboard": "Dashboard"
+
+import { defineMessages } from "react-intl";
+
+const messages = defineMessages({
+    pageTitle: {
+        id: "Components.App.messages.pageTitle",
+        description: "This is test subtitle block",
+        defaultMessage: "This is subtitle"
     },
-    ru: {
-        "nav.dashboard": "Панель Управления"
-    }
-};
+    // ...
+});
+
+export default messages;

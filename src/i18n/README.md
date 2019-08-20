@@ -1,5 +1,13 @@
 ## React-intl
 
+#### Flow
+
+1. Create a new component 
+2. Create a directory or a file called `messages`
+3. Use `defineMessages` for definning new messages
+4. Run `yarn build:langs` for getting all messages
+5. Move new messages to `src/i18/lang` directory
+
 #### Note that the `id` attribute should be unique for the whole application
 Prefer to follow the format componentName.someUniqueIdWithInComponent
 ```
