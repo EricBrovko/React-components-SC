@@ -1,6 +1,3 @@
-"use strict";
-
-const { parse } = require('intl-messageformat-parser');
 const fs = require('fs');
 const glob = require('glob');
 const globSync = glob.sync;
