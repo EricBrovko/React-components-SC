@@ -6,7 +6,7 @@ import { IntlProvider } from "react-intl";
 type Props = {
     children: ReactNode,
     locale: string,
-    messages: Object
+    messages: I18nMessages
 };
 
 const IntlComponent = ({ locale, messages, children }: Props) => (

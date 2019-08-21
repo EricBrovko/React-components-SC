@@ -1,10 +1,12 @@
 // @flow
 
-const getBrowserLanguage = () => (
-    (
-        window.navigator.language || window.navigator.userLanguage
-    ).split("-")[0] || "en"
-);
+const getBrowserLanguage = (navigator: Object = window.navigator) => {
+    const language = navigator.language || navigator.userLanguage;
+
+    if (language) return language.split("-")[0];
+
+    return "en";
+};
 
 export {
     getBrowserLanguage
