@@ -1,6 +1,5 @@
 // @flow
 
-import "bootstrap/dist/css/bootstrap.css";
 import "./theme/index.css";
 
 import React from "react";
