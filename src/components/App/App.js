@@ -5,12 +5,12 @@ import React from "react";
 
 import IntlProvider from "../Intl";
 import RenderApp from "./subcomponents/renderApp";
+import AppRouter from "./subcomponents/appRouter";
 
 import { getBrowserLanguage } from "../../utils/lang";
 import { getMessages } from "../../helper/messageHelper";
 
 const lang = getBrowserLanguage();
-
 
 class App extends React.PureComponent<*, *> {
 	state = {
@@ -24,7 +24,10 @@ class App extends React.PureComponent<*, *> {
 
 		return (
 			<IntlProvider locale={this.state.lang} messages={messages}>
-				<RenderApp onLangChange={this.onLangChange} />
+				{/* <RenderApp onLangChange={this.onLangChange} /> */}
+				<AppRouter>
+
+				</AppRouter>
 			</IntlProvider>
 		);
 	}
@@ -35,4 +38,3 @@ export {
 	IntlProvider,
 	RenderApp
 };
-
